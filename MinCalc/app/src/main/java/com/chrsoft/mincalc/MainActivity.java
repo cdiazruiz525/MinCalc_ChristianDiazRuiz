@@ -198,23 +198,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void suma (View view) {
-        operador = "+";
-        updateTextView();
+        if (num1.toString().equalsIgnoreCase("") == false) {
+            operador = "+";
+            updateTextView();
+        }
     }
 
     public void resta (View view) {
-        operador = "–";
-        updateTextView();
+        if (num1.toString().equalsIgnoreCase("") == false) {
+            operador = "–";
+            updateTextView();
+        }
     }
 
     public void multiplicacion (View view) {
-        operador = "×";
-        updateTextView();
+        if (num1.toString().equalsIgnoreCase("") == false) {
+            operador = "×";
+            updateTextView();
+        }
     }
 
     public void division (View view) {
-        operador = "÷";
-        updateTextView();
+        if (num1.toString().equalsIgnoreCase("") == false) {
+            operador = "÷";
+            updateTextView();
+        }
     }
 
     public void resultado (View view) {
