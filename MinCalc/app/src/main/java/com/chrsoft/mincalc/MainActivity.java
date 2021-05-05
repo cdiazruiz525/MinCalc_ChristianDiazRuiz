@@ -192,7 +192,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void updateTextView () {
-        String str = this.num1.toString();
         this.tvNum1.setText(this.num1.toString());
         this.tvOperador.setText(operador);
         this.tvNum2.setText(this.num2.toString());
@@ -219,7 +218,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void resultado (View view) {
-        if (num1.toString() != null && num2.toString() != null && operador != null) {
+        if (num1.toString().equalsIgnoreCase("") == false && num2.toString().equalsIgnoreCase("") == false  && operador != null) {
             float numero1 = Float.parseFloat(num1.toString());
             float numero2 = Float.parseFloat(num2.toString());
             float resultado = 0;
