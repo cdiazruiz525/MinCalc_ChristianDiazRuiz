@@ -16,4 +16,6 @@
     <string name="btnMultiplicacion">×</string>
     <string name="btnDivision">÷</string>
     <string name="btnResultado">=</string>
+    <string name="btnReiniciar">Reiniciar</string>
+    <string name="btnBorrar">AC</string>
 </resources>

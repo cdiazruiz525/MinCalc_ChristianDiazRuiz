@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.Button;
 import android.widget.TextView;
 
 
@@ -15,218 +15,104 @@ public class MainActivity extends AppCompatActivity {
 
     private StringBuffer num1 = new StringBuffer();
     private StringBuffer num2 = new StringBuffer();
+    private StringBuffer consola = new StringBuffer();
     private String operador;
-    private TextView tvNum1;
-    private TextView tvNum2;
-    private TextView tvOperador;
+    private TextView tvPantalla;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        tvNum1 = (TextView) findViewById(R.id.tvNum1);
-        tvNum2 = (TextView) findViewById(R.id.tvNum2);
-        tvOperador = (TextView) findViewById(R.id.tvOperador);
+        tvPantalla = findViewById(R.id.tvPantalla);
     }
 
-    public void cero (View view) {
+    /**
+     *
+     * @param view
+     */
+    public void introducirNumero (View view) {
+        Button btn = (Button) view;
+        String btnText = btn.getText().toString();
+
         if (num1.toString().equalsIgnoreCase("0")) {
             num1.deleteCharAt(0);
-
         }
         if (num2.toString().equalsIgnoreCase("0")) {
             num2.deleteCharAt(0);
         }
         if (operador == null) {
-            num1.append("0");
+            num1.append(btnText);
         } else {
-            num2.append("0");
+            num2.append(btnText);
         }
         updateTextView();
     }
 
-    public void uno (View view) {
-        if (num1.toString().equalsIgnoreCase("0")) {
-            num1.deleteCharAt(0);
+    /**
+     *
+     * @param view
+     */
+    public void introducirOperacion (View view) {
+        Button btn = (Button) view;
+        String btnText = btn.getText().toString();
 
+        if (!num1.toString().equalsIgnoreCase("")) {
+            this.operador = btnText;
         }
-        if (num2.toString().equalsIgnoreCase("0")) {
-            num2.deleteCharAt(0);
-        }
-        if (operador == null) {
-            num1.append("1");
-        } else {
-            num2.append("1");
-        }
-        updateTextView();
-    }
-    public void dos (View view) {
-        if (num1.toString().equalsIgnoreCase("0")) {
-            num1.deleteCharAt(0);
 
-        }
-        if (num2.toString().equalsIgnoreCase("0")) {
-            num2.deleteCharAt(0);
-        }
-        if (operador == null) {
-            num1.append("2");
-        } else {
-            num2.append("2");
-        }
-        updateTextView();
-    }
-    public void tres (View view) {
-        if (num1.toString().equalsIgnoreCase("0")) {
-            num1.deleteCharAt(0);
-
-        }
-        if (num2.toString().equalsIgnoreCase("0")) {
-            num2.deleteCharAt(0);
-        }
-        if (operador == null) {
-            num1.append("3");
-        } else {
-            num2.append("3");
-        }
-        updateTextView();
-    }
-    public void cuatro (View view) {
-        if (num1.toString().equalsIgnoreCase("0")) {
-            num1.deleteCharAt(0);
-
-        }
-        if (num2.toString().equalsIgnoreCase("0")) {
-            num2.deleteCharAt(0);
-        }
-        if (operador == null) {
-            num1.append("4");
-        } else {
-            num2.append("4");
-        }
-        updateTextView();
-    }
-    public void cinco (View view) {
-        if (num1.toString().equalsIgnoreCase("0")) {
-            num1.deleteCharAt(0);
-
-        }
-        if (num2.toString().equalsIgnoreCase("0")) {
-            num2.deleteCharAt(0);
-        }
-        if (operador == null) {
-            num1.append("5");
-        } else {
-            num2.append("5");
-        }
-        updateTextView();
-    }
-    public void seis (View view) {
-        if (num1.toString().equalsIgnoreCase("0")) {
-            num1.deleteCharAt(0);
-
-        }
-        if (num2.toString().equalsIgnoreCase("0")) {
-            num2.deleteCharAt(0);
-        }
-        if (operador == null) {
-            num1.append("6");
-        } else {
-            num2.append("6");
-        }
         updateTextView();
     }
 
-    public void siete (View view) {
-        if (num1.toString().equalsIgnoreCase("0")) {
-            num1.deleteCharAt(0);
 
+    public void updateTextView () {
+        consola = new StringBuffer();
+        consola.append(this.num1.toString());
+        if (this.operador != null) {
+            consola.append(this.operador);
+            if (!num2.toString().equalsIgnoreCase("")){
+                consola.append(this.num2.toString());
+            }
         }
-        if (num2.toString().equalsIgnoreCase("0")) {
-            num2.deleteCharAt(0);
+        this.tvPantalla.setText(consola.toString());
+    }
+
+    public void borrar (View view) {
+        if (!num2.toString().equalsIgnoreCase("")) {
+            num2.deleteCharAt(num2.length() - 1);
+        } else if (operador != null) {
+            this.operador = null;
+        } else if (!num1.toString().equalsIgnoreCase("")) {
+            num1.deleteCharAt(num1.length() - 1);
         }
-        if (operador == null) {
-            num1.append("7");
-        } else {
-            num2.append("7");
-        }
+
         updateTextView();
     }
-    public void ocho (View view) {
-        if (num1.toString().equalsIgnoreCase("0")) {
-            num1.deleteCharAt(0);
 
-        }
-        if (num2.toString().equalsIgnoreCase("0")) {
-            num2.deleteCharAt(0);
-        }
-        if (operador == null) {
-            num1.append("8");
-        } else {
-            num2.append("8");
-        }
-        updateTextView();
-    }
-    public void nueve (View view) {
-        if (num1.toString().equalsIgnoreCase("0")) {
-            num1.deleteCharAt(0);
-
-        }
-        if (num2.toString().equalsIgnoreCase("0")) {
-            num2.deleteCharAt(0);
-        }
-        if (operador == null) {
-            num1.append("9");
-        } else {
-            num2.append("9");
-        }
-        updateTextView();
+    public void reiniciar (View view) {
+        resetearValores();
     }
 
     public void punto (View view) {
-        if (num1.toString().contains(".") == false && num1.toString().equalsIgnoreCase("") == false  && operador == null) {
+        if (!num1.toString().contains(".") && !num1.toString().equalsIgnoreCase("") && operador == null) {
             num1.append(".");
-        } else if (num2.toString().contains(".") == false && num2.toString().equalsIgnoreCase("") == false) {
+        } else if (!num2.toString().contains(".") && !num2.toString().equalsIgnoreCase("")) {
             num2.append(".");
         }
         updateTextView();
     }
 
-    public void updateTextView () {
-        this.tvNum1.setText(this.num1.toString());
-        this.tvOperador.setText(operador);
-        this.tvNum2.setText(this.num2.toString());
+    public void resetearValores () {
+        this.num1 = new StringBuffer();
+        this.num2 = new StringBuffer();
+        this.consola = new StringBuffer();
+        this.operador = null;
+        this.tvPantalla.setText("");
     }
 
-    public void suma (View view) {
-        if (num1.toString().equalsIgnoreCase("") == false) {
-            operador = "+";
-            updateTextView();
-        }
-    }
 
-    public void resta (View view) {
-        if (num1.toString().equalsIgnoreCase("") == false) {
-            operador = "–";
-            updateTextView();
-        }
-    }
 
-    public void multiplicacion (View view) {
-        if (num1.toString().equalsIgnoreCase("") == false) {
-            operador = "×";
-            updateTextView();
-        }
-    }
-
-    public void division (View view) {
-        if (num1.toString().equalsIgnoreCase("") == false) {
-            operador = "÷";
-            updateTextView();
-        }
-    }
-
-    public void resultado (View view) {
-        if (num1.toString().equalsIgnoreCase("") == false && num2.toString().equalsIgnoreCase("") == false  && operador != null) {
+    public void calcularResultado (View view) {
+        if (!num1.toString().equalsIgnoreCase("") && !num2.toString().equalsIgnoreCase("") && operador != null) {
             float numero1 = Float.parseFloat(num1.toString());
             float numero2 = Float.parseFloat(num2.toString());
             float resultado = 0;
@@ -243,16 +129,46 @@ public class MainActivity extends AppCompatActivity {
             if (operador.equalsIgnoreCase("÷")) {
                 resultado = numero1 / numero2;
             }
-            
-            enviarResultado(resultado);
+            resetearValores();
+            mostrarResultado(resultado);
+            //enviarResultado(resultado);
         }
     }
 
+    /**
+     *
+     * @param resultado
+     */
     public void enviarResultado (float resultado) {
         Intent intent = new Intent(this, Activity2.class);
         String message = "El resultado es: " + resultado;
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
+    }
+
+    /**
+     *
+     * @param resultado
+     */
+    public void mostrarResultado (float resultado) {
+        if (numeroEsEntero(resultado) == true) {
+            this.num1.append((int) resultado);
+        } else {
+            this.num1.append(resultado);
+        }
+        updateTextView();
+    }
+
+    /**
+     *
+     * @param numero
+     * @return
+     */
+    private boolean numeroEsEntero (float numero) {
+        if (numero % 1 == 0) {
+            return true;
+        }
+        return false;
     }
 
 
