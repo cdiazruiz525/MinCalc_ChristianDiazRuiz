@@ -1,4 +1,4 @@
-# MinCalc 🖩
+# MinCalc
 Creacion de una calculadora simple para Android.
 
 ## Como usar MinCalc 📋
@@ -45,6 +45,17 @@ Por ejemplo:
 * En caso de no ser decimal, ningún numero podra comenzar por 0.
 * La calculadora permite cambiar el operador usado, una vez hayamos escrito la expresión.
 * La Activity2 nos permitira volver/retornar a la MainActivity.
+
+
+## Versión 2 ➕
+
+Se ha introducido los siguientes cambios:
+* En MainActivity ya no se muestran tres TextViews, el TextView principal pasa a mostrar toda la información.
+* Activity_2 ha sido removida temporalmente, ahora el resultado se pasa a mostrar en MainActivity.
+* Se ha añadido la funcionalidad de Reiniciar, la cual reiniciará todos los datos en pantalla.
+* Se ha añadido la funcionalidad de Borrar, con esto se podrá borrar un carácter/es sin necesidad de reiniciar la operación.
+* El resultado pasa a mostrarse en pantalla, permitiendo seguir operando con un resultado.
+* Se ha cambiado la paleta de colores, diferenciado los botones de acción de aquellos que son de operación y/o numéricos.
 
 
 ## Enlaces 🔗
