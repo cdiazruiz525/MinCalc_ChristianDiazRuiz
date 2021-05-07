@@ -31,6 +31,7 @@ Quedará de la siguiente forma:
 #### Versión 2
 En la v2 se han establecidos numerosos cambios en la clase MainActivity, siendo los principales, la implementación de una sola pantalla que interactue con nuestro layout, además de la adición de nuevas funcionalidades, como son los bontones "Reiniciar" y "Borrar". En el codigo se ha realizado una gran depuración y optimización de los metodos usados.
 El diseño de MainActivity, pasa a quedar de la siguiente forma:
+
 ![MainActivity_Design_v2](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc_Images/MainActivity_Design_v2.png)
 
 
