@@ -47,6 +47,7 @@ Por ejemplo:
 * La Activity2 nos permitira volver/retornar a la MainActivity.
 
 
+
 ## Versión 2 ➕
 
 Se ha introducido los siguientes cambios:
@@ -56,7 +57,7 @@ Se ha introducido los siguientes cambios:
 * Se ha añadido la funcionalidad de Borrar, con esto se podrá borrar un carácter/es sin necesidad de reiniciar la operación.
 * El resultado pasa a mostrarse en pantalla, permitiendo seguir operando con un resultado.
 * Se ha cambiado la paleta de colores, diferenciado los botones de acción de aquellos que son de operación y/o numéricos.
-
+* Ahora aquellas cifras que no contienen decimales, pasan a mostrarse como números enteros.
 
 ## Enlaces 🔗
 
