@@ -17,8 +17,8 @@ Creacion de una calculadora simple para Android.
 La calculadora se basa en el uso de empty activities en Android Studio.
 
 ### MainActivity
-La primera empty Activity, será el main, la cual es denominada MainActivity. Esta se encargará de llevar a cabo distintos metodos,
-según el boton que esté pulsado. El layout de la actividad es el siguiente:
+La primera empty Activity, será el main, la cual es denominada [MainActivity](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc/app/src/main/java/com/chrsoft/mincalc/MainActivity.java). Esta se encargará de llevar a cabo distintos metodos,
+según el boton que esté pulsado. El [layout](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc/app/src/main/res/layout/activity_main.xml) de la actividad es el siguiente:
 
 ![MainActivity_Layout](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc_Images/MainActivity_Layout.png)
 
@@ -27,11 +27,8 @@ Quedará de la siguiente forma:
 ![MainActivity_Appearance](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc_Images/MainActivity_Appearance.png)
 
 
-![MainActivity_Appearance](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc_Images/MainActivity_Appearance.png)
-
 ### Activity_2
-Como segunda actividad, tenemos Activity2. Esta actividad se encargara de recibir un String con un mensaje de resultado, para despues pasar
-y mostrar el mensaje en un text view.
+Como segunda actividad, tenemos [Activity_2](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc/app/src/main/java/com/chrsoft/mincalc/Activity2.java). Esta actividad se encargara de recibir un String con un mensaje de resultado, para despues mediante el [layout](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc/app/src/main/res/layout/activity_2.xml), mostrar el mensaje en un text view.
 
 ![Activity2_Layout](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc_Images/Activity2_Layout.png)
 
@@ -54,8 +51,8 @@ Por ejemplo:
 
 * [MainActivity](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc/app/src/main/java/com/chrsoft/mincalc/MainActivity.java)
   * [Layout MainActivity](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc/app/src/main/res/layout/activity_main.xml)
-* [Activity2](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc/app/src/main/java/com/chrsoft/mincalc/Activity2.java)
-  * [Layout Activity2](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc/app/src/main/res/layout/activity_2.xml)
+* [Activity_2](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc/app/src/main/java/com/chrsoft/mincalc/Activity2.java)
+  * [Layout Activity_2](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc/app/src/main/res/layout/activity_2.xml)
 * [Strings](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc/app/src/main/res/values/strings.xml)
 * [Manifest](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc/app/src/main/AndroidManifest.xml)
 * [Carpeta de resources](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/tree/main/MinCalc/app/src/main/res)
