@@ -4,9 +4,9 @@ Creacion de una calculadora simple para Android.
 ## Como usar MinCalc 📋
 1. Primero deberá escribir una cifra.
 1. Una vez escrita, elija operador.
-1. La proxima cifra pasará a escribirse en el cuadrado derecho.
+1. La proxima cifra pasará a escribirse.
 1. Una vez haya terminado de escribir la segunda cifra, pulse en igual (=).
-2. Pasará a mostrarse una pantalla en la que se le de el resultado de la operación.
+2. Pasará a mostrarse en pantalla el resultado de la operación.
 
 ### Ejemplo de uso de la MinCalc 🚀
 ![Ejemplo](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc_Images/ejemplo.gif)
