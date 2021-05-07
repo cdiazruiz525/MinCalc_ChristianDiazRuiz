@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         Button btn = (Button) view;
         String btnText = btn.getText().toString();
 
-        if (!num1.toString().equalsIgnoreCase("")) {
+        if (!num1.toString().equalsIgnoreCase("") && !num1.toString().equalsIgnoreCase("0")) {
             this.operador = btnText;
         }
 
