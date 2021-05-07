@@ -16,6 +16,7 @@ Creacion de una calculadora simple para Android.
 
 La calculadora se basa en el uso de empty activities en Android Studio.
 
+### MainActivity
 La primera empty Activity, será el main, la cual es denominada MainActivity. Esta se encargará de llevar a cabo distintos metodos,
 según el boton que esté pulsado. El layout de la actividad es el siguiente:
 
@@ -28,7 +29,7 @@ Quedará de la siguiente forma:
 
 ![MainActivity_Appearance](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc_Images/MainActivity_Appearance.png)
 
-
+### Activity_2
 Como segunda actividad, tenemos Activity2. Esta actividad se encargara de recibir un String con un mensaje de resultado, para despues pasar
 y mostrar el mensaje en un text view.
 
