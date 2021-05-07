@@ -9,7 +9,7 @@ Creacion de una calculadora simple para Android.
 2. Pasará a mostrarse una pantalla en la que se le de el resultado de la operación.
 
 ### Ejemplo de uso de la MinCalc 🚀
-
+![Ejemplo](https://github.com/cdiazruiz525/MinCalc_ChristianDiazRuiz/blob/main/MinCalc_Images/ejemplo.gif)
 
 
 ## Código ⚙️
